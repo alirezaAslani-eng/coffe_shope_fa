@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .title-pd {
+        font-family: moraba;
+        @apply text-2xl md:text-5xl text-zinc-700 dark:text-white;
+    }
+
+    .text-pd {
+        font-family: morabamd;
+        @apply text-lg md:text-3xl text-zinc-700 dark:text-white mt-0.5 md:mt-1.5 inline-block;
+    }
+
+    .price-pd {
+        font-family: danabold;
+        @apply text-base md:text-xl text-teal-600 dark:text-emerald-500;
+    }
+
+    .toman {
+        font-family: dana;
+        @apply text-xs md:text-sm text-teal-600 dark:text-emerald-500 tracking-tighter;
+    }
+
+    .des-pd {
+        font-family: danamd;
+        @apply text-sm text-right md:text-xl text-zinc-700 dark:text-white;
+    }
+
+    .active {
+        @apply text-orange-300;
+    }
+
+    .products-box {
+        @apply bg-white dark:bg-zinc-700 rounded-2xl shadow-normal px-2 py-2 md:p-5;
+    }
+
+    .banner {}
+
+    .banner {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .banner-right {
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 33.85%, rgba(0, 0, 0, 0.1) 100%), url(/public/img/categories/category-right.jpg);
+    }
+
+    .banner-left {
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 33.85%, rgba(0, 0, 0, 0.1) 100%), url(/public/img/categories/category-left.jpg);
+    }
+
+    .swiper-button-prev-custom,
+    .swiper-button-next-custom {
+        @apply cursor-pointer w-[36px] h-[36px] md:w-11 md:h-11 rounded-full bg-white md:hover:bg-gray-300 md:dark:hover:bg-white active:bg-gray-300 dark:active:bg-white dark:active:text-zinc-700 md:dark:hover:text-zinc-700 transition-all dark:bg-zinc-700 text-zinc-700 dark:text-white flex justify-center items-center;
+    }
+
+    .blog {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .blog-url-1 {
+        background-image: url(/public/img/blogs/blog-1.png);
+    }
+
+    .blog-url-2 {
+        background-image: url(/public/img/blogs/blog-2.png);
+
+    }
+
+    .coverGRD {
+        background: linear-gradient(90deg, #FED7AA 0%, #FDBA74 150%);
+    }
+
+    .blog-url-3 {
+        background-image: url(/public/img/blogs/blog-3.png);
+    }
+
+    .blog-url-4 {
+        background-image: url(/public/img/blogs/blog-4.png);
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar:hover {}
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-gray-300 dark:bg-zinc-700 cursor-pointer transition-all hover:bg-gray-400 dark:hover:bg-zinc-600
+    }
+
+    .title-footer {
+
+        @apply text-xl text-white leading-[28px]
+    }
+
+    .small-text {
+        @apply text-[16px] md:text-xl text-gray-300 leading-[28px] flex items-center w-[154px]
+    }
+
+    .icon {
+        @apply md:min-w-6 md:min-h-6 md:max-w-6 max-h-5 min-w-5 min-h-5 max-w-5 
+    }
+
+    .button-footer {
+        @apply w-[176px] h-[48px] sm:w-[248px] sm:h-[48px] flex flex-wrap justify-center items-center gap-x-1.5 sm:gap-x-2.5 text-base leading-[22px] md:text-xl md:leading-[28px] rounded-[12px]
+    }
+    .px-py-footer{
+        @apply pt-8 md:pt-[42px] 2xl:pt-[62px] w-[90%] mx-auto pb-10 md:pb-[54px]
+    }
+    ._circle{
+        @apply rounded-full flex justify-center items-center
+    }
+    .first-circle{
+        @apply w-[30px] h-[30px] border border-white/10
+    }
+    .scond-circle{
+        @apply w-[20px] h-[20px] border border-white/20
+    }
+    .third-circle{
+        background: linear-gradient(180deg, #FDBA74 0%, #FED7AA 100%);
+        @apply w-[10px] h-[10px] 
+    }
+
+}

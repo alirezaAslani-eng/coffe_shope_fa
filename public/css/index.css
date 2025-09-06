@@ -1,0 +1,162 @@
+/* FontFamily---------------------------------------- */
+@font-face {
+    font-family: "dana";
+    src: url(../font/Dana/DanaFaNum-Regular.woff2);
+    font-display:swap;
+}
+@font-face {
+    font-family: "danamd";
+    src: url(../font/Dana/DanaFaNum-Medium.woff2);
+    font-display:swap;
+}
+@font-face {
+    font-family: "danabold";
+    src: url(../font/Dana/DanaFaNum-DemiBold.woff2);
+    font-display:swap;
+}
+
+@font-face {
+    font-family: "moraba";
+    src: url(../font/Morabba/Morabba-Medium.woff2);
+    font-display:swap;
+}
+@font-face {
+    font-family: "morabamd";
+    src: url(../font/Morabba/Morabba-Light.woff2);
+    font-display:swap;
+}
+@font-face {
+    font-family: "morababold";
+    src: url(../font/Morabba/Morabba-Bold.woff2);
+    font-display:swap;
+}
+
+.dana-sm{font-family: dana;}
+.dana-md{font-family: danamd;}
+.dana-lg{font-family: danabold;}
+.moraba-md{font-family: moraba;}
+.moraba-sm{font-family: morabamd;}
+.moraba-lg{font-family: morababold;}
+/* _____________________________________________________ */
+
+/* -------------------------------------------------------- 
+*/
+/* for js */
+
+.hid{
+    display: none !important;
+}
+
+.showAndHidden{
+    display: none;
+}
+
+.showMenuMobile{
+    animation: showMenuMobile 150ms ease forwards !important;
+}
+
+
+.hidMenuMobile{
+    animation: hidMenuMobile 150ms ease forwards !important;
+}
+@keyframes showMenuMobile {
+    from{
+        display: none !important ;
+        transform: translateX(100%);
+    }
+    to{
+        display: block !important;
+        transform: translateX(0); 
+    }
+}
+
+@keyframes hidMenuMobile {
+    from{
+        transform: translateX(0); 
+        display: block !important;
+    }
+    to{
+        transform: translateX(100%);
+        display: none !important;
+    }
+}
+/* ---------------------------------- */
+.showCartMobile{
+    animation: showCartMobile 150ms ease forwards !important;
+}
+.hidCartMobile{
+    animation: hidCartMobile 150ms ease forwards !important;
+}
+
+
+@keyframes showCartMobile {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0); 
+    }
+}
+
+@keyframes hidCartMobile {
+    from{
+        transform: translateX(0); 
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+/* =================================== */
+
+.circle{
+    border-radius: 999px;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-lg{
+    border-color:#ffffff25;
+    width: 203px;
+    height: 203px;
+}
+.circle-md{
+    border-color:#ffffff50;
+    width: 145px;
+    height: 145px;
+}
+.circle-sm{
+    border-color:#ffffff80;
+    width: 95px;
+    height: 95px;
+}
+
+.products{
+    background:linear-gradient(rgba(243,244,246,0.65),rgba(243,244,246,0.65)) ;
+    
+}
+html.dark .products{
+    background:url(../img/body-bg.png)  ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+@media  (max-width:1280px){
+    .products{
+        background:none !important;
+    }
+}
+#club{
+    background: linear-gradient(90deg, #10B981 0%, #059669 100%);
+
+}
+.grid-footer{
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    
+}
+@media only screen and (max-width:768px) {
+    .grid-footer{
+        grid-template-columns: 1fr;
+        
+    }
+}
