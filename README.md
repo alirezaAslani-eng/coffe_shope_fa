@@ -1,3 +1,4 @@
+## Preview : https://alirezaaslani-eng.github.io/coffe_shope_fa/
 ### This is a simple persian website project with only one page. it helped me learn `TailwindCSS`, `Swiper.js`, `ScrollReveal.js` and i finished it at **March 20, 2024** . 
 
 ## What i Learned : 
